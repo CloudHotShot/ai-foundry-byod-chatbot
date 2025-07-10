@@ -1,0 +1,11 @@
+# Azure AI Chatbot BYOD Requirements
+# Core Azure packages
+azure-identity>=1.15.0
+openai>=1.30.0
+azure-search-documents>=11.6.0
+
+# Streamlit for web interface
+streamlit>=1.32.0
+
+# Additional utilities
+python-dotenv>=1.0.0
