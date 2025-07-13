@@ -1,0 +1,35 @@
+
+We’ve all been there — frantically digging through endless SharePoint folders, Slack channels, and email threads trying to find that one piece of company information for a client call that starts in five minutes. You know the answer exists somewhere in your organization’s digital maze, but good luck finding it quickly.
+Working at a large corporation, I see this pain point daily across teams, but I can’t exactly build solutions using our actual company data due to strict information security policies. So instead, I decided to create a proof-of-concept that others could adapt for their own organizations.
+Before we dive in, all the code for this project is available on GitHub at https://github.com/zakarel/ai-foundry-byod-chatbot. Feel free to clone it and follow along or skip ahead if you just want to see the implementation.
+
+https://github.com/zakarel/ai-foundry-byod-chatbot
+https://github.com/zakarel/ai-foundry-byod-chatbot
+What I built is a framework that any company could implement with their own data to create an AI assistant that knows their business inside and out. While I can’t deploy this with my employer’s actual documents (corporate compliance, you know how it is), I can share the technical approach that would let smaller companies or teams build their own intelligent document assistant.
+
+Taken from streamlit.io — fast and simple front-end
+Using Azure AI Foundry and an opensource framework in Python called Streamlit, I created a template that can instantly pull information from company data sources.
+
+After cloning the code make sure to setup the resources on your Azure subscription:
+- AI Foundry — AI Search (index the data), Project and a Hub.
+- Storage Account with blob container to keep the data.
+- Key Vault (optional) to keep connection strings secured.
+
+When building an AI chatbot for company data, you need to index your documents in Azure AI Search first. But manually creating search indexes is tedious — you have to define field types, specify what’s searchable, set key fields, etc.
+
+The script json_to_ai_search.py solves just that by automatically analyzing your JSON data and creating the right Azure Search index schema. It inspects your data structure, maps types correctly, and makes smart decisions about which fields should be searchable.
+
+I tested it with a books collection, but it works with any structured company data. Instead of spending hours manually configuring indexes, you just point this script at your JSON file and it prepares everything for your AI assistant automatically.
+
+Wrapping Up: Your AI Assistant is Ready to Go
+Building an AI chatbot for your company data doesn’t have to be a months-long enterprise project. With Azure AI Foundry and Streamlit, you can go from scattered documents to intelligent assistant in a matter of hours, not weeks.
+
+We’ve covered the complete pipeline: automatically indexing your JSON data with our schema generator, connecting to Azure’s powerful AI models, and creating a clean chat interface that your team will actually want to use. The best part? Everything is modular and customizable — swap out data sources, adjust the UI, or integrate with your existing systems as needed.
+
+Your company’s knowledge is its competitive advantage. Instead of letting it sit buried in folders and databases, you now have the tools to make it instantly accessible through natural language queries. Whether it’s customer support teams finding policy information, sales teams accessing product details, or executives getting quick insights from company reports — your AI assistant becomes the bridge between human questions and organizational knowledge.
+
+The complete implementation is available at https://github.com/zakarel/ai-foundry-byod-chatbot. Star it if you found this helpful, fork it for your own projects, and let me know in the comments what kind of company data you’re planning to make AI-searchable.
+
+The future of workplace productivity is conversational — and you just built your first piece of it.
+
+
