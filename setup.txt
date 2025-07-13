@@ -1,3 +1,4 @@
+REF: https://medium.com/%40zaki.rel/stop-searching-through-company-documents-build-your-own-ai-assistant-instead-bddfbe51d292
 
 We’ve all been there — frantically digging through endless SharePoint folders, Slack channels, and email threads trying to find that one piece of company information for a client call that starts in five minutes. You know the answer exists somewhere in your organization’s digital maze, but good luck finding it quickly.
 Working at a large corporation, I see this pain point daily across teams, but I can’t exactly build solutions using our actual company data due to strict information security policies. So instead, I decided to create a proof-of-concept that others could adapt for their own organizations.
