@@ -1,8 +1,8 @@
 # AI UseCase #1 Accelerator - Bring Your Own Data ChatBot Using Azure Open AI
 
-![Static Badge](https://img.shields.io/badge/VSCode-1.101.2?style=flat&amp;color=purple)
-![Static Badge](https://img.shields.io/badge/Python-3.12.3?style=flat&amp;color=navy)
-![Static Badge](https://img.shields.io/badge/Streamlit-1.46.0?style=flat&amp;color=red)
+![Static Badge](https://img.shields.io/badge/VSCode-1.101.2-purple)
+![Static Badge](https://img.shields.io/badge/Python-3.12.3-navy)
+![Static Badge](https://img.shields.io/badge/streamlit-1.46.0-red)
 
 ## Intoduction
 
