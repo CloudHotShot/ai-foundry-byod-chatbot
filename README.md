@@ -8,6 +8,8 @@
 
 A simple Streamlit-based chatbot that connects to Azure OpenAI and Azure AI Search, allowing you to ask questions about your own data indexed in Azure AI Search.
 
+![AI Chatbot Screenshot](img/343.png)
+
 ## Features
 
 * Chat interface with real-time streaming responses
